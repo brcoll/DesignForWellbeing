@@ -1,0 +1,14 @@
+title {
+    font-size: large;
+    text-align: center;
+}
+
+.button {
+    display: block;
+    position: fixed;
+    top: 2vh;
+}
+
+.img {
+    align-content: center;
+}
