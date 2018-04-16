@@ -2,15 +2,31 @@
 
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
         <script src="https://download.affectiva.com/js/3.2/affdex.js"/></script>
         <script src="text/javascript" src="./main.js"></script>
 
     </head>
 
     <body>
-        <title size="24">Design For Wellbeing</title>
-        <img id="image" src="startingpicture.jpg"/>
-        <button class="button" id="nextPicture">Next Picture</button>
+        <header>Design For Wellbeing</header>
+
+        <div>
+            <div class="subtitle" id="subtitleDiv" style="display: inline-block">
+                <p>Welcome to our project, click start to relieve some stress!</p>
+            </div>
+
+            <div class="images" id="imageDiv" style="display: inline-block">
+                <img id="image" src="startingpicture.jpg"/>
+            </div>
+
+            <div class="buttons" id="buttonDiv" style="display: inline-block">
+                <button type="button" id="nextPicture">Next Picture</button>
+                <button type="button" id="prevPicture">Previous Picture</button>
+            </div>
+        </div>
+
+
     </body>
 
 </html>
