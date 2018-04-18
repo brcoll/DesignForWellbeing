@@ -2,10 +2,16 @@
 
 <html>
     <head>
+        <!-- import jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--import default Affectiva CSS code-->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+        <!--import custom css-->
         <link rel="stylesheet" type="text/css" href="main.css">
-        <script src="https://download.affectiva.com/js/3.2/affdex.js"/></script>
-        <script src="text/javascript" src="./main.js"></script>
 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://download.affectiva.com/js/3.2/affdex.js"></script>
     </head>
 
     <body>
@@ -17,8 +23,10 @@
             </div>
 
             <div class="images" id="imageDiv" style="display: inline-block">
-                <img id="image" src="1.jpg"/>
+                <img id="image" src="pictures/startingpicture.jpg"/>
             </div>
+
+            <div id="results"></div>
 
             <div class="buttons" id="buttonDiv" style="display: inline-block">
                 <button type="button" id="nextPicture">Next Picture</button>
@@ -26,7 +34,10 @@
             </div>
         </div>
 
+        <div class="col-md-8" id="affdex_elements" style="width:680px;height:480px; display: none"></div>
 
+
+        <script src="main.js"></script>
     </body>
 
 </html>

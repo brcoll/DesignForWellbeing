@@ -31,10 +31,9 @@ header, footer {
 }
 
 .button {
-    float: left;
-    display: inline-block;
-    position: center;
-    top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .img {
