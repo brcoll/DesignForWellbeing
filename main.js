@@ -13,11 +13,9 @@ let joy = [0, 0];
 document.querySelector("#nextPicture").onclick = function() {
     if (imageShownIndex == 6) {
         if (joy[0] > joy[1]) {
-            document.querySelector("#results").innerText = "You're a crazy cat lady!";
-            document.querySelector("image").src = "pictures/catresult.jpg";//-niko
+            document.querySelector("#image").src = "pictures/catresult.jpg";//-niko
         } else if (joy[1] > joy[0]) {
-            document.querySelector("#results").innerText= "You're a dog homie";
-            document.querySelector("image").src = "pictures/dogresult.jpg";//-niko
+            document.querySelector("#image").src = "pictures/dogresult.jpg";//-niko
         } else {
             document.querySelector("#results").innerText = "Oh hi Mark Zuckerberg (test inconclusive)";
         }
