@@ -7,11 +7,12 @@ let detector = new affdex.CameraDetector(divRoot, width, height, faceMode);
 detector.detectAllEmotions();
 detector.detectAllAppearance();
 detector.detectAllExpressions();
+
 let imageShownIndex = 0;
 let joy = [0, 0];
 
 document.querySelector("#nextPicture").onclick = function() {
-    if (imageShownIndex == 6) {
+    if (imageShownIndex === 6) {
         if (joy[0] > joy[1]) {
             document.querySelector("#image").src = "pictures/catresult.jpg";//-niko
         } else if (joy[1] > joy[0]) {
@@ -34,7 +35,7 @@ document.querySelector("#reset").onclick = function () {
     document.querySelector("#results").innerText="";
 };
 
-detector.addEventListener("onImageResultsSuccess", function(faces, image, timestamp) {
+detector.addEventListener("onImageResultsSuccess", function(faces) {
     console.log("Number of faces found: " + faces.length);
     if (faces.length > 0) {
         joy[imageShownIndex % 2] += faces[0].emotions.joy;
